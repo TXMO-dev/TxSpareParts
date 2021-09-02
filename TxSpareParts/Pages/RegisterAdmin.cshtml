@@ -1,0 +1,56 @@
+﻿@page "/RegisterAdmin"
+@model TxSpareParts.Infastructure.DTO.AdminDTO
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Administrator</title>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <form action="/api/Identity/Identity/registeradminuser" method="post">
+        <input type="hidden" name="Email" value="@Request.Query["Email"]" />
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td>
+                    <input type="text" name="FirstName" />
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input type="text" name="LastName" />
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td>
+                    <input type="text" name="PhoneNumber" />
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="Password" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Confirm Password
+                </td>
+                <td>
+                    <input type="password" name="ConfirmPassword" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Register" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

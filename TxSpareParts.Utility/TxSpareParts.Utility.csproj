@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
+    <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+    <PackageReference Include="Gehtsoft.PDFFlowLib" Version="2.1.1" />
+    <PackageReference Include="MailKit" Version="2.15.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.9" />
+    <PackageReference Include="PayStackDotNetSDK" Version="1.4.4" />
+    <PackageReference Include="Twilio" Version="5.65.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TxSpareParts.Core\TxSpareParts.Core.csproj" />
+  </ItemGroup>
+
+</Project>
